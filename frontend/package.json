@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "npx prettier . --write",
+    "check-types": "npx tsc --noEmit --pretty",
+    "check-format": "npx prettier . --check",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "15.2.4",
@@ -23,6 +27,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "prettier": "^3.4.1",
+    "husky": "^9.1.7",
+    "autoprefixer": "^10.0.1"
   }
 }
