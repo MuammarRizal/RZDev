@@ -10,7 +10,7 @@
     "format": "npx prettier . --write",
     "check-types": "npx tsc --noEmit --pretty",
     "check-format": "npx prettier . --check",
-    "prepare": "husky"
+    "prepare": "cd .. && husky frontend/.husky"
   },
   "dependencies": {
     "next": "15.2.4",
