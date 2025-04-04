@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import '../styles/globals.scss';
 import { inter } from '@/ui/fonts';
-import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
 export const metadata: Metadata = {
