@@ -1,6 +1,5 @@
 import '@/ui/home/Banner/banner.scss';
 import { image_swiper } from '@/data/dataSwiper';
-import './swiper.scss';
 import ImageSwiper from '@/components/ImageSwiper/ImageSwiper';
 
 function BannerHomepage() {
