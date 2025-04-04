@@ -1,3 +1,13 @@
+import Banner from '@/ui/home/Banner/Banner';
+
 export default function Home() {
-  return <h1>Hello 'World'!</h1>;
+  return (
+    <>
+      <main>
+        <section className="banner-section">
+          <Banner />
+        </section>
+      </main>
+    </>
+  );
 }

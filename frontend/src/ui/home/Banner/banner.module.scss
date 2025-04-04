@@ -1,0 +1,30 @@
+.container__banner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 7vw;
+    .content_1{
+        width: 60vw;
+        .text_container{
+            width: 41.111vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5vw;
+            .title{
+                font-size: 2.778vw;
+                font-weight: bold;
+                font-family: "Inter";
+                line-height: 1.1;
+            }
+            .description{
+                font-size: 1.111vw;
+                color: #64748B;
+            }
+        }
+    }
+    .content_2{
+        width: 40vw;
+    }
+}
