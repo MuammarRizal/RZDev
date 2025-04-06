@@ -1,0 +1,76 @@
+.container__categories {
+  width: 100%;
+  padding: 0 5%; // Padding dasar untuk mobile
+  box-sizing: border-box;
+
+  .title_categories {
+    display: flex;
+    flex-direction: column; // Stack vertikal di mobile
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 5vw;
+    }
+  }
+
+  .body_categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; // Untuk wrap item di mobile
+    justify-content: center; // Pusatkan di mobile
+    gap: 2rem; // Jarak antar item
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      padding: 0 10vw;
+      margin-top: 3vw;
+      gap: 0;
+    }
+
+    .item {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        width: fit-content;
+      }
+      .icon {
+        width: 60px; // Fixed size untuk mobile
+        height: 60px;
+        margin: 0.5rem;
+
+        @media (min-width: 480px) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @media (min-width: 768px) {
+          width: 5vw;
+          height: 5vw;
+          max-width: 100px; // Batas maksimum
+          max-height: 100px;
+          margin: 0;
+        }
+
+        @media (min-width: 1200px) {
+          width: 7.014vw;
+          max-width: 120px;
+        }
+      }
+      .title {
+        color: #0f172a;
+      }
+      .courses {
+        color: #334155;
+      }
+    }
+  }
+}

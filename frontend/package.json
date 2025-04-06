@@ -13,6 +13,11 @@
     "prepare": "cd .. && husky frontend/.husky"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -25,11 +30,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.0.1",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "typescript": "^5",
-    "prettier": "^3.4.1",
     "husky": "^9.1.7",
-    "autoprefixer": "^10.0.1"
+    "prettier": "^3.4.1",
+    "typescript": "^5"
   }
 }

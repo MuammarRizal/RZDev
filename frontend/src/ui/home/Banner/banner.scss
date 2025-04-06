@@ -1,33 +1,96 @@
 .container__banner {
-  width: 100vw;
-  height: 100vh;
+  // Base styles for all devices
+  width: 100%;
+  min-height: 100vh; // Gunakan min-height untuk konten panjang
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-inline: 7vw;
+  justify-content: space-between;
+  padding: 5% 7%; // Gunakan persentase untuk padding responsif
+  box-sizing: border-box;
+
+  // Content 1 (Text)
   .content_1 {
-    width: 60vw;
+    width: 100%;
+    max-width: 600px; // Batas maksimum untuk readability
     .text_container {
-      width: 41.111vw;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 1.5vw;
+      gap: clamp(12px, 1.5vw, 24px); // Gap responsif dengan clamp()
+
       .title {
-        font-size: 2.778vw;
+        font-size: clamp(24px, 2.5vw, 48px); // Fluid typography
         font-weight: bold;
-        font-family: 'Inter';
-        line-height: 1.1;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.2;
+        margin: 0;
       }
+
       .description {
-        font-size: 1.111vw;
+        font-size: clamp(14px, 1.1vw, 18px);
         color: #64748b;
+        line-height: 1.6;
       }
     }
   }
+
+  // Content 2 (Swiper)
   .content_2 {
-    width: 40vw;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+
     .swiper-wrapper {
+      display: flex;
       align-items: center;
+    }
+  }
+
+  // Mobile First Media Queries
+  @media (min-width: 721px) {
+    // Desktop Layout
+    flex-direction: row;
+    gap: 5%;
+
+    .content_1 {
+      width: 55%;
+    }
+
+    .content_2 {
+      width: 40%;
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 720px) {
+    // Tablet & Mobile Layout
+    flex-direction: column;
+    text-align: center;
+    padding: 15% 7%;
+    justify-content: center;
+
+    .content_1 {
+      margin-bottom: 2rem;
+
+      .text_container {
+        align-items: center;
+      }
+    }
+
+    .content_2 {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  // Extra Small Devices
+  @media (max-width: 480px) {
+    padding: 20% 5%;
+
+    .content_1 {
+      .text_container {
+        gap: 8px;
+      }
     }
   }
 }

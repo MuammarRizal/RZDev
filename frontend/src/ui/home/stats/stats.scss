@@ -1,0 +1,36 @@
+.container__stats {
+  width: 100%;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .data_stats {
+    width: 45%;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    // Tablet (768px ke atas)
+    @media (min-width: 768px) {
+      width: 45%; // Dua kolom di tablet
+    }
+
+    // Desktop (1024px ke atas)
+    @media (min-width: 1024px) {
+      width: 27vw;
+      max-width: 300px;
+    }
+
+    &.border_separator {
+      @media (min-width: 1024px) {
+        border-right: 3px solid rgba(128, 128, 128, 0.3);
+      }
+    }
+  }
+  .data_stats:last-child {
+    border-right: none !important;
+  }
+}
