@@ -1,5 +1,4 @@
 import { CourseCard } from '@/components/cards/Card';
-import Image from 'next/image';
 
 function Courses() {
   const courses = [
