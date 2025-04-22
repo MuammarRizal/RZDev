@@ -97,7 +97,7 @@ git push origin fitur/nama-fitur
 ## Panduan Kontribusi
 - Ikuti konvensi commit Conventional Commits
 - Pastikan semua test pass sebelum membuat PR
-- Update dokumentasi terkait perubahan Anda
+- Update dokumentasi terkait perubahan Anda.
 
 ## 📬 Kontak
 ### 📧 Email: muammarrizal2002@gmail.com
